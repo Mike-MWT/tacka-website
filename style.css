@@ -141,8 +141,19 @@ main {
     display: block;
 }
 
+.gallery-top .gallery-img {
+    object-fit: contain;
+    background: transparent;
+}
+
+.gallery-top .gallery-item {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 .gallery-small {
-    height: 15vh;
+    height: auto;
+    width: 100%;
 }
 
 .gallery-large {
