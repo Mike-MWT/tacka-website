@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-blue: #4A90E2;
+    --accent-yellow: #F5D547;
+    --accent-green: #52C77D;
+    --light-bg: #F9F7F4;
+    --dark-text: #2C3E50;
+    --white: #FFFFFF;
+    --shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background: linear-gradient(135deg, var(--light-bg) 0%, #FAFBF8 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.lang-btn {
+    padding: 8px 12px;
+    border: 2px solid var(--primary-blue);
+    background: var(--white);
+    color: var(--primary-blue);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.lang-btn.active {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 0;
+    position: relative;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Accent line under header */
+header::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-yellow), var(--accent-green));
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-blue);
+}
+
+section:nth-child(2) {
+    border-left-color: var(--accent-green);
+}
+
+section:nth-child(3) {
+    border-left-color: var(--accent-yellow);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section:nth-child(2) h2,
+section:nth-child(2) h2 {
+    color: var(--accent-green);
+}
+
+section:nth-child(3) h2 {
+    color: var(--accent-yellow);
+    color: #C4A800;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.email-link {
+    display: inline-block;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.email-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(74, 144, 226, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px solid #E8E6E1;
+    margin-top: 40px;
+    color: #999;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .language-switcher {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section, header {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.2s;
+}
