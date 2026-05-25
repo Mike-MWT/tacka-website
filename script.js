@@ -3,7 +3,7 @@ const translations = {
         name: 'Michael Tacka',
         tagline: 'Willkommen',
         'about-title': 'Über mich',
-        'about-text': 'Freut mich, Sie hier zu sehen. Diese Website ist noch im Aufbau. Für Fragen und Kontakt, bitte nutzen Sie die E-Mail-Adresse unten.',
+        'about-text': 'Freut mich, Sie hier zu sehen. Diese Website ist noch im Aufbau. Für Fragen und Kontakt nutzen Sie bitte die E-Mail-Adresse unten.',
         'contact-title': 'Kontakt',
         footer: '&copy; 2026 Michael Tacka. Alle Rechte vorbehalten.'
     },
