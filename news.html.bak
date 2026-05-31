@@ -71,10 +71,5 @@
  </div>
  
  </div>
- <div class="news-item">
- <img src="./images/gulf_fritillary.jpg" alt="Großer Perlmuttfalter" class="news-image">
- <div class="news-date">31. Mai 2026</div>
- <div class="news-caption">Großer Perlmuttfalter (Gulf fritillary)</div>
- </div>
 </body>
 </html>
