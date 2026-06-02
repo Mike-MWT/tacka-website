@@ -1,9 +1,13 @@
 # Technologie-Handbuch: Website-Deployment & Bild-Integration
 
 ## Über dieses Dokument
-Dieses Dokument dient als externes Gedächtnis für zukünftige KI-Instanzen, um kritische Workflows und "Lessons Learned" aus der Integration von Telegram-Content in die Website zu dokumentieren.
+Dieses Dokument **gilt ausschließlich für die Website**, alle anderen Memories liegen in der Verzeichnisstruktur "home/openclaw/.openclaw". Dieses Dokument dient als externes Gedächtnis für zukünftige KI-Instanzen, um kritische Workflows und "Lessons Learned" aus der Integration von Telegram-Content in die Website zu dokumentieren.  Merkwort: Urmel
 
 ---
+
+## Wichtige Erinnerungen und Anmerkungen
+- **Wichtige Info**: Dieses Dokument **gilt ausschließlich für die Website**
+- alle anderen Memories liegen in der Verzeichnisstruktur "home/openclaw/.openclaw" Merkwort: Urmel
 
 ## Kritische Dateipfade (Single Source of Truth)
 
@@ -20,6 +24,13 @@ Dieses Dokument dient als externes Gedächtnis für zukünftige KI-Instanzen, um
 ├── news.html
 └── .git/
 ```
+
+---
+
+## Externe Website
+
+Die Website liegt bei GitHub und ist umgeleitet auf tacka.de
+Ebenfalls zu erreichen unter tacka.com 
 
 ---
 
