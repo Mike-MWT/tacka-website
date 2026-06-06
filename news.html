@@ -6,97 +6,58 @@
  <title>News</title>
  <style>
  body {
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
- margin: 0;
- padding: 20px;
- background-color: #f5f5f5;
- }
- h1 {
- text-align: center;
- color: #2c3e50;
- }
- .news-container {
- max-width: 1200px;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ line-height: 1.6;
+ color: #333;
+ max-width: 800px;
  margin: 0 auto;
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- gap: 20px;
+ padding: 20px;
+ background-color: #f4f4f4;
+ text-align: center;
  }
  .news-item {
- background: white;
- border-radius: 8px;
- overflow: hidden;
- box-shadow: 0 2px 8px rgba(0,0,0,0.1);
- transition: transform 0.2s;
- }
- .news-item:hover {
- transform: translateY(-2px);
+ margin-bottom: 40px;
+ text-align: center;
  }
  .news-image {
- width: 100%;
- height: 250px;
- object-fit: cover;
- }
- .news-content {
- padding: 16px;
+ max-width: 100%;
+ height: auto;
+ display: block;
+ margin: 0 auto;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
  }
  .news-date {
- color: #666;
- font-style: italic;
  font-size: 0.9em;
- margin-bottom: 8px;
+ color: #666;
+ margin-top: 10px;
  }
  .news-caption {
- font-weight: bold;
  font-size: 1.1em;
- color: #333;
+ font-weight: bold;
+ margin-top: 5px;
  }
  </style>
 </head>
 <body>
- <h1>Aktuelle News</h1>
- <div class="news-container">
- 
+
  <div class="news-item">
- <img src="images/01obelisk.jpg" alt="Obelisk" class="news-image">
- <div class="news-content">
- <div class="news-date">25. Mai 2026</div>
- <div class="news-caption">Obelisk</div>
- </div>
- </div>
- 
- <div class="news-item">
- <img src="images/02LaBoca.jpg" alt="LaBoca" class="news-image">
- <div class="news-content">
- <div class="news-date">25. Mai 2026</div>
- <div class="news-caption">LaBoca</div>
- </div>
- </div>
- 
- <div class="news-item">
- <img src="images/03MoteH.jpg" alt="MoteH" class="news-image">
- <div class="news-content">
- <div class="news-date">25. Mai 2026</div>
- <div class="news-caption">MoteH</div>
- </div>
- </div>
- 
- <div class="news-item">
- <img src="images/geier.jpg" alt="Geier" class="news-image">
- <div class="news-content">
- <div class="news-date">01. Juni 2026</div>
- <div class="news-caption">Geier</div>
- </div>
- </div>
- 
- <div class="news-item">
- <img src="images/perlmuttfalter.jpg" alt="Perlmuttfalter" class="news-image">
- <div class="news-content">
- <div class="news-date">02. Juni 2026</div>
- <div class="news-caption">Perlmuttfalter</div>
- </div>
+ <img src="./images/garten.jpg" alt="Garten" class="news-image">
+  <div class="news-date">25. Mai 2026</div>
+ <div class="news-caption">Garten</div>
  </div>
 
+ <div class="news-item">
+ <img src="./images/gulf_fritillary.jpg" alt="Großer Perlmuttfalter" class="news-image">
+ <div class="news-date">31. Mai 2026</div>
+ <div class="news-caption">Großer Perlmuttfalter (Gulf fritillary)</div>
  </div>
+
+ <div class="news-item">
+ <img src="./images/geier.jpg" alt="Geier" class="news-image">
+ <div class="news-date">6. Juni 2026</div>
+ <div class="news-caption">Geier</div>
+ </div>
+
 </body>
 </html>
