@@ -1,100 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>News</title>
- <style>
- body {
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
- line-height: 1.6;
- margin: 0;
- padding: 20px;
- background-color: #f9f9f9;
- }
- .container {
- max-width: 800px;
- margin: 0 auto;
- background: white;
- padding: 30px;
- border-radius: 8px;
- box-shadow: 0 2px 10px rgba(0,0,0,0.1);
- }
- h1 {
- color: #333;
- text-align: center;
- margin-bottom: 30px;
- }
- .back-link {
- display: inline-block;
- margin-bottom: 30px;
- text-decoration: none;
- color: #007bff;
- }
- .news-item {
- margin-bottom: 40px;
- border-bottom: 1px solid #eee;
- padding-bottom: 30px;
- }
- .news-item:last-child {
- border-bottom: none;
- }
- .news-image {
- max-width: 100%;
- height: auto;
- border-radius: 8px;
- margin-bottom: 15px;
- box-shadow: 0 2px 8px rgba(0,0,0,0.15);
- }
- .news-caption {
- font-style: italic;
- color: #666;
- text-align: center;
- font-size: 1.1em;
- }
- .news-date {
- color: #888;
- font-size: 0.9em;
- margin-bottom: 10px;
- }
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .news-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .news-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .news-date {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        .news-caption {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
 <body>
- <div class="container">
- <h1>News</h1>
- <a href="./" class="back-link">← Zurück zur Übersicht</a>
- 
- <div class="news-item">
- <img src="images/garten.jpg" alt="Neues Foto" class="news-image">
- <div class="news-date">03. Juni 2026</div>
- <div class="news-caption">Neues Foto</div>
+    <h1>News</h1>
+    <div class="news-container">
+        
+        <div class="news-item">
+            <img src="images/perlmuttfalter.jpg" alt="Großer Perlmuttfalter" class="news-image">
+            <div class="news-date">06. Juni 2026</div>
+            <div class="news-caption">**_Großer Perlmuttfalter (Gulf fritillary)_**</div>
+        </div>
 
- <img src="./images/garten.jpg" alt="Garten" class="news-image">
- <div class="news-date">29. Mai 2026</div>
- <div class="news-caption">Garten</div>
- </div>
- 
- </div>
- <div class="news-item">
- <img src="images/garten.jpg" alt="Neues Foto" class="news-image">
- <div class="news-date">03. Juni 2026</div>
- <div class="news-caption">Neues Foto</div>
+        <div class="news-item">
+            <img src="images/geier.jpg" alt="Geier" class="news-image">
+            <div class="news-date">02. Juni 2026</div>
+            <div class="news-caption">Geier</div>
+        </div>
 
- <img src="./images/gulf_fritillary.jpg" alt="Großer Perlmuttfalter" class="news-image">
- <div class="news-date">31. Mai 2026</div>
- <div class="news-caption">Großer Perlmuttfalter (Gulf fritillary)</div>
- </div>
- 
- <div class="news-item">
- <img src="./images/geier.jpg" alt="Geier" class="news-image">
- <div class="news-date">02. Juni 2026</div>
- <div class="news-caption">Geier</div>
- <div class="news-item">
- <img src="images/perlmuttfalter.jpg" alt="Perlmuttfalter" class="news-image">
- <div class="news-date">06. Juni 2026</div>
- <div class="news-caption">Perlmuttfalter</div>
- </div>
+        <div class="news-item">
+            <img src="images/garten.jpg" alt="Garten" class="news-image">
+            <div class="news-date">01. Juni 2026</div>
+            <div class="news-caption">Garten</div>
+        </div>
 
- </div>
+    </div>
 </body>
 </html>
