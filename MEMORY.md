@@ -1,21 +1,23 @@
 # Technologie-Handbuch: Website-Deployment & Bild-Integration
 
 ## Über dieses Dokument
-Dieses Dokument **gilt ausschließlich für die Website**, alle anderen Memories liegen in der Verzeichnisstruktur "home/openclaw/.openclaw". Dieses Dokument dient als externes Gedächtnis für zukünftige KI-Instanzen, um kritische Workflows und "Lessons Learned" aus der Integration von Telegram-Content in die Website zu dokumentieren.  Merkwort: Urmel
+Dieses Dokument **gilt ausschließlich für die Website**, alle anderen Memories liegen in der Verzeichnisstruktur "home/openclaw/.openclaw/workspace". Dieses Dokument dient als externes Gedächtnis für zukünftige KI-Instanzen, um kritische Workflows und "Lessons Learned" aus der Integration von Telegram-Content in die Website zu dokumentieren.
 
 ---
 
 ## Wichtige Erinnerungen und Anmerkungen
 - **Wichtige Info**: Dieses Dokument **gilt ausschließlich für die Website**
-- alle anderen Memories liegen in der Verzeichnisstruktur "home/openclaw/.openclaw" Merkwort: Urmel
+- alle anderen Memories liegen in der Verzeichnisstruktur "home/openclaw/.openclaw/workspace"
 
 ## Kritische Dateipfade (Single Source of Truth)
 
 ### Arbeitsumgebung
-- **Arbeitsverzeichnis**: `/home/openclaw/workspace-projects/tacka-website/`
+- **Arbeitsverzeichnis Webseite**: `/home/openclaw/workspace-projects/tacka-website/`
 - **Telegram-Inbound-Quelle**: `.openclaw/media/inbound` (hier landen Bilder aus Telegram)
 - **Ziel-Verzeichnis Bilder**: `images/` (relativ zum Arbeitsverzeichnis)
 - **Ziel-Datei News**: `news.html` (relativ zum Arbeitsverzeichnis)
+- **Arbeitsverzeichnis Allgemein**: `/home/openclaw/.openclaw/workspace
+- **fileswap**: /home/Fileswap
 
 ### Wichtige Verzeichnisse
 ```
@@ -29,8 +31,9 @@ Dieses Dokument **gilt ausschließlich für die Website**, alle anderen Memories
 
 ## Externe Website
 
-Die Website liegt bei GitHub und ist umgeleitet auf tacka.de
-Ebenfalls zu erreichen unter tacka.com 
+- Die Website liegt bei GitHub und ist umgeleitet auf tacka.de
+- Ebenfalls zu erreichen unter tacka.com 
+- Veröffentlichen über GitHub (push)
 
 ---
 
