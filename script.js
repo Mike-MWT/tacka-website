@@ -4,6 +4,8 @@ const translations = {
         tagline: 'Willkommen',
         'about-title': 'Über mich',
         'about-text': 'Freut mich, Sie hier zu sehen. Diese Website ist noch im Aufbau. Für Fragen und Kontakt nutzen Sie bitte die E-Mail-Adresse unten.',
+        'travel-title': 'Reiseerfahrungen',
+        'travel-text': 'Reiseberichte',
         'contact-title': 'Kontakt',
         footer: '&copy; 2026 Michael Tacka. Alle Rechte vorbehalten.'
     },
@@ -12,6 +14,8 @@ const translations = {
         tagline: 'Welcome',
         'about-title': 'About Me',
         'about-text': 'Nice to have you here. This website is still under construction. For questions and inquiries, please use the email address below.',
+        'travel-title': 'Travel Experiences',
+        'travel-text': 'Travel Logs',
         'contact-title': 'Contact',
         footer: '&copy; 2026 Michael Tacka. All rights reserved.'
     }
